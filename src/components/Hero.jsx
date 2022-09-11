@@ -1,8 +1,9 @@
 import React from 'react';
-import Image from '../../src/mesjid.jpeg';
+import '../styles/App.css';
+
 const Hero = () => {
   return (
-    <div className="hero  flex flex-col items-center justify-center border" style={{ backgroundImage: `url(${Image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '100vh', width: '100vw' }}>
+    <div className="hero relative  background flex flex-col items-center justify-center border mb-5 ">
       <div className="hero-overlay bg-opacity-40"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md ">

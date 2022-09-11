@@ -1,3 +1,12 @@
+.background {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(40, 30, 30, 0.3)), url('../../src/mesjid.jpeg');
+  background-size: cover;
+  background-repeat: no repeat;
+  height: 100vh;
+  width: 100vw !important;
+  padding: 0 !important;
+}
+
 .App {
   text-align: center;
 }

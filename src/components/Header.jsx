@@ -1,13 +1,12 @@
 import React from 'react';
+import logo from '../../src/logo.png';
 
 const Header = () => {
   return (
-    <nav class="flex items-center justify-between flex-wrap bg-[#1cac85] p-6">
+    <nav class="flex items-center justify-between flex-wrap absolute bg-transparent p-6 z-10 w-full ">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-        </svg>
-        <span class="font-semibold text-xl tracking-tight">Nusantara</span>
+        <img className="w-20 h-16" src={logo} alt="logo mesjid" />
+        <span class="font-semibold text-xl tracking-tight">AL - MUCHTARIYAH</span>
       </div>
       <div class="block lg:hidden">
         <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-[#1cac85] hover:text-white hover:border-white">
@@ -16,6 +15,20 @@ const Header = () => {
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
+      </div>
+      <div class="w-full block flex-grow justify-between lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow"></div>
+        <div>
+          <a href="#responsive-header" class=" mt-4 lg:inline-block lg:mt-0 text-white font-bold text-lg  hover:text-white mr-4">
+            Tentang Kami
+          </a>
+          <a href="#responsive-header" class=" mt-4 lg:inline-block lg:mt-0 text-white font-bold text-lg hover:text-white mr-4">
+            Kajian
+          </a>
+          <a href="#responsive-header" class="mt-4 lg:inline-block lg:mt-0 text-white font-bold text-lg hover:text-white">
+            Donasi
+          </a>
+        </div>
       </div>
     </nav>
   );
