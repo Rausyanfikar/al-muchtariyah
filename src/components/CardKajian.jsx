@@ -6,7 +6,7 @@ import adzan from '../../src/adzan.jpeg';
 
 const CardKajian = () => {
   return (
-    <div className="w-full h-full ">
+    <div className="w-full  ">
       <div className="max-w-4xl mx-auto p-4 flex flex-col justify-center ">
         <div className="flex justify-center text-2xl font-bold">
           <h1>Kegiatan Al-Muchtariyah</h1>
